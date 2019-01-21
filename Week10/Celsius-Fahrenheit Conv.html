@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Celsius-Fahrenheit Converter</title>
+	<script type="text/javascript">
+		drawName('JustSomeRandomDude');
+
+// The code below will allow you to interact with the letters
+	bounceBubbles();
+		function F2C() {
+			document.getElementById("result").value = 5/9 * (document.getElementById("cf").value-32);
+		}
+		function C2F() {
+			document.getElementById("result").value = 9/5 * document.getElementById("cf").value+32;
+		}
+
+	</script>
+</head>
+<body>
+	<label width = "100">Temperature Converter:<br>
+		<input type = "text" id="cf">
+	</label><br>
+	<label width = "100">Result:<br>
+		<input type="text" id="result">
+	</label><br>
+	<p>
+		<button type="button" onclick="F2C()">To Celcius</button>
+	</p>
+	<p>
+		<button type="button" onclick="C2F()">To Fahrenheit</button>
+	</p>
+</body>
+</html>

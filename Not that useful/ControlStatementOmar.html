@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JS</title>
+</head>
+<body>
+
+<script type="text/javascript">
+	var pass = 0;
+	var fail = 0;
+	var total = 0;
+	var average = 0;
+	var count = 0;
+	var char = '';
+	var name = prompt("Enter your name please?");
+	var grade; 
+	do {
+
+		grade = parseInt(prompt("Enter grade 0 - 100"));
+		if( grade <= 100 && grade >= 90) {
+
+			pass += 1;
+			total += grade;
+			count++;
+
+		} else if(grade < 90 && grade >= 80) {
+
+			pass += 1;
+			total += grade;
+			count++;
+
+		} else if(grade < 80 && grade >= 70) {
+
+			pass += 1;
+			total += grade;
+			count++;
+
+
+		} else if(grade < 70 && grade >= 60) {
+
+			pass += 1;
+			total += grade;
+			count++;
+
+		} else if(grade < 60 && grade >= 50) {
+
+			pass += 1;
+			total += grade;
+			count++;
+
+		} else if(grade < 50 && grade >= 0) {
+
+			fail += 1;
+			total += grade;
+			count++;
+
+		} else {
+
+		}
+
+	} while(grade > 0);
+
+
+	average = (total / count);
+	if(average <= 100 && average >= 90) {
+
+		char = 'A';
+	}
+
+	else if(average < 90 && average >= 80) {
+
+		char = 'B';
+	}
+	
+	else if(average < 80 && average >= 70) {
+
+		char = 'C';
+	}
+	
+	else if(average < 70 && average >= 60) {
+
+		char = 'D';
+	}
+	else if(average < 60 && average >= 50) {
+
+		char = 'E';
+	}
+	else {
+		char = 'F';
+	}
+	
+	document.writeln("<h1>" + name +  " your average score is " + parseInt(average) + "</h1>");
+	document.writeln("<h3> Pass:" + pass +  "  " + "Fail:" + fail + "</h3>");
+	document.writeln("<h3> Your mark is " + char + "</h3>");
+
+</script>
+</body>
+</html>

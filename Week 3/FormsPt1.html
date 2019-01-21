@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Extended Foorm</title>
+</head>
+<body>
+	<h1>Feedback Form</h1>
+	<P>Please Fill out this form to help us improve our site</P><hr>
+	<form method="post">
+		<p><label>Full Name: <input type="text" name="Name" size="25" maxlength="20"> </label></p><hr>
+		<p><label>Comments: <br> <textarea name="Comments" rows="4" cols="36" placeholder="Enter Comments Here."></textarea></label></p><hr>
+		<p><label>Email: <input type="text" name="email" size="25"></label></p><hr>
+
+		<p>
+			<strong>Things you like:</strong><br>
+			<label><input type="checkbox" name="thingsliked" value="Design">Site Design</label><br>
+			<label><input type="checkbox" name="thingsliked" value="Links">Links</label><br>
+			<label><input type="checkbox" name="thingsliked" value="Ease">Ease of Use</label><br>
+			<label><input type="checkbox" name="thingsliked" value="Images">Images</label><br>
+			<label><input type="checkbox" name="thingsliked" value="Code">The Sphagetti Code</label><br>
+		</p><hr>
+		<p>
+			<strong>How did you get to our site?:</strong><br>
+			<label><input type="radio" name="howtosite" value="Design">Search Engine</label><br>
+			<label><input type="radio" name="howtosite" value="Links">From another site</label><br>
+			<label><input type="radio" name="howtosite" value="Ease">Magazine</label><br>
+			<label><input type="radio" name="howtosite" value="Images">Reference in a book</label><br>
+		</p><hr>
+		<p>
+			<label>Rate our Website
+				<select name="rating">
+					<option selected>Choose an Option</option>
+					<option>Excellent</option>
+					<option>Very Good</option>
+					<option>Good</option>
+					<option>Average</option>
+					<option>Poor</option>
+					<option>Unbearable</option>
+				</select>
+			</label>
+		</p><hr>
+		<p>
+			<input type="submit" name="Insert">
+			<input type="reset" name="Clear">
+		</p><hr>
+	</form>
+
+</body>
+</html>

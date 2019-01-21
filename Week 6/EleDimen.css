@@ -1,0 +1,9 @@
+		p{	background-color: lightskyblue;
+			margin-bottom: .5em;
+			font-family: arial,helvetica,sans-serif;}
+		.width20 { 	width: 20%; }
+		.width80 { 	width: 80%; 
+					text-align: center;	}
+		.scroll	 {	width: 20%;
+					height: 150px;
+					overflow: scroll;}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Switching Between HTML and JS</title>
+	<script type="text/javascript">
+		var options, list;
+		
+		choice = window.prompt("1 = Numbered List\n2 = Alphabets\n3 = Roman Numerals");
+		switch(choice){
+			case "1":
+				options = '';
+				list = document.writeln("<h1>Numbered List\n</h1>");
+				break;
+
+			case "2":
+				options = 'list-style-type: upper-alpha'; //"list-style-type: upper-alpha";
+				list = document.writeln("<h1>Lettered List\n</h1>");
+				break;
+
+			case "3":
+				options = 'list-style-type: upper-roman';//"list-style-type: upper-roman";
+				list = document.writeln("<h1>Roman Numeral List\n</h1>");
+				break;
+		}
+
+
+		//document.writeln(options);
+		
+		document.writeln("<ol style='"+options+"'>");
+		
+		for (var i = 1; i <= 3; i++)
+			document.writeln("<li>List item " + i +" </li>");
+		document.writeln("</ol>");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
